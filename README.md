@@ -10,8 +10,6 @@ https://expressjs.com/en/starter/installing.html
 
 https://github.com/express-handlebars/express-handlebars
 
-https://www.npmjs.com/package/body-parser
-
 https://mongoosejs.com/
 
 ## Primeiros passos
@@ -23,10 +21,6 @@ npm install --save express
 ### Instalando o handlebars
 
 npm install --save express-handlebars
-
-### Instalando o body-parser
-
-npm install body-parser --save
 
 ### Instalando o mongoose
 
