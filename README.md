@@ -3,6 +3,7 @@
 - NodeJs
 - Express
 - mongoDB
+- Bootstrap
 
 ## Recursos utilizados
 
@@ -11,6 +12,8 @@ https://expressjs.com/en/starter/installing.html
 https://github.com/express-handlebars/express-handlebars
 
 https://mongoosejs.com/
+
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
 
 ## Primeiros passos
 
