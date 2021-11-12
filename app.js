@@ -4,6 +4,7 @@ const express = require('express');
 const handlebars = require('express-handlebars');
 const app = express();
 const admin = require('./routes/admin');
+const path = require('path');
 
 
 // ----- Configuracoes ----- //
@@ -17,6 +18,8 @@ app.engine('handlebars', handlebars({
     defaultLayout: 'main'
 }));
 app.set('view engine', 'handlebars');
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // ----- Rotas ----- //
 
