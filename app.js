@@ -5,6 +5,7 @@ const handlebars = require('express-handlebars');
 const app = express();
 const admin = require('./routes/admin');
 const path = require('path');
+const mongoose = require('mongoose');
 
 
 // ----- Configuracoes ----- //
@@ -22,6 +23,12 @@ app.engine('handlebars', handlebars({
 app.set('view engine', 'handlebars')
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+mongoose.connect('mongodb://localhost/db_blogapp').then(() => {
+    console.log("Conectado ao banco de dados!")
+}).catch((err) => {
+    console.log("Erro ao conectar: " + err)
+})
 
 // ----- Rotas ----- //
 
