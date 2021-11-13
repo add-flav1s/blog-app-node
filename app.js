@@ -15,9 +15,11 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 app.engine('handlebars', handlebars({
-    defaultLayout: 'main'
-}));
-app.set('view engine', 'handlebars');
+    extname: 'handlebars',
+    defaultLayouts: 'main',
+    layoutsDir: __dirname + "/views/layouts"
+}))
+app.set('view engine', 'handlebars')
 
 app.use(express.static(path.join(__dirname, 'public')));
 
