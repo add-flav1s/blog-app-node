@@ -13,9 +13,21 @@
       <br />
       <small>Criado em: {{date}}</small>
       <br />
-      <a href="categorias/edit/{{_id}}">
-        <button class="btn btn-sm btn-dark mt-3">Editar categoria</button>
-      </a>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            <a href="categorias/edit/{{_id}}">
+              <button class="btn btn-sm btn-warning mt-3">Editar categoria</button>
+            </a>
+          </div>
+          <div class="col">
+            <form action="/admin/categorias/deletar/{{_id}}" method="post">
+              <input type="hidden" name="id" value="{{_id}}" />
+              <button type="submit" class="btn btn-danger btn-sm mt-3">Excluir
+                categoria</button>
+            </form>
+          </div>
+      </div>
     </div>
   </div>
 
