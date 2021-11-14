@@ -15,6 +15,10 @@ https://mongoosejs.com/
 
 https://getbootstrap.com/docs/5.1/getting-started/introduction/
 
+https://www.npmjs.com/package/flash
+
+https://www.npmjs.com/package/express-session
+
 ## Primeiros passos
 
 ### Instalando o express
@@ -28,6 +32,14 @@ npm install --save express-handlebars
 ### Instalando o mongoose
 
 npm install --save mongoose
+
+## Instalando o flash
+
+npm install --save connect-flash
+
+## Instalando o session
+
+npm install --save express-session
 
 ## Executando a aplicação
 
